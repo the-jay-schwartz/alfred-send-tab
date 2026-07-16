@@ -1,0 +1,161 @@
+
+# === GLOBAL TEMPLATE ===
+# ====================================================================
+# SYSTEM RULES & OPERATING SYSTEM DEFAULTS
+# ====================================================================
+
+# General macOS File System Noise
+.DS_Store                        # Core macOS directory layout configuration files
+.localized                       # Localized folder names used by Finder windows
+__MACOSX/                        # Resource forks automatically bundled in zip files
+.AppleDouble                     # Metadata storage for files on non-HFS filesystems
+.LSOverride                      # Hidden user preferences for Finder icon views
+Icon[
+]                                # Custom folder icons created inside Finder
+
+# Resource forks
+._*                              # Extended attribute file streams for Mac files
+
+# Files and directories that might appear in the root of a volume
+.DocumentRevisions-V100          # macOS file versioning tracking structures
+.fseventsd                       # File system events log used by Spotlight searches
+.Spotlight-V100                  # Core system lookup indexing database for volumes
+.TemporaryItems                  # Volatile temporary cache folders for programs
+.Trashes                         # Trash bin location directories for external disks
+.VolumeIcon.icns                 # High-resolution image files for volume icon displays
+.com.apple.timemachine.donotpresent # Time Machine backup exclusion flags
+.com.apple.timemachine.supported # Time Machine active tracking capability markers
+.PKInstallSandboxManager         # Temporary folders used by package installations
+.PKInstallSandboxManager-SystemSoftware # Sandbox directories for OS updates
+.hotfiles.btree                  # Performance tracking systems for active files
+.vol                             # Virtual file system layer access points
+.file                            # Unix-level file reference node systems
+.disk_label*                     # External volume identifiers and color labels
+lost+found                       # Disconnected or orphaned files recovered by fsck
+.HFS+ Private Directory Data[
+]                                # Hidden internal directory structures for HFS+
+
+# Directories potentially created on remote AFP share
+.AppleDB                         # Network shared folder tracking databases
+.AppleDesktop                    # Historical desktop configurations for servers
+Network Trash Folder             # Legacy trash folders for network-attached shares
+Temporary Items                  # Ephemeral shared workspace network directories
+.apdisk                          # AFP protocol network mounting attributes
+
+# Mac OS 6 to 9
+Desktop DB                       # Classic macOS legacy database indices
+Desktop DF                       # Classic macOS legacy desktop file tables
+TheFindByContentFolder           # Legacy system content indices for file searching
+TheVolumeSettingsFolder          # System-level parameters for ancient storage disks
+.FBCIndex                        # Historical file indexing metadata stores
+.FBCSemaphoreFile                # File access locks for classic search tools
+.FBCLockFolder                   # System locking folders for concurrent file tasks
+
+# Quota system
+.quota.group                     # Unix disk storage quotas applied to user groups
+.quota.user                      # Unix disk storage quotas applied to individuals
+.quota.ops.group                 # Tracking operations for group disk quotas
+.quota.ops.user                  # Tracking operations for individual disk quotas
+
+# TimeMachine
+Backups.backupdb                 # Standard target directory for Time Machine backups
+.MobileBackups                   # Local snapshot paths when offline from main drive
+.MobileBackups.trash             # Purged snapshot files scheduled for elimination
+MobileBackups.trash              # Alternative name mapping for deleted snapshots
+tmbootpicker.efi                 # Boot loader system files for Time Machine drives
+
+# ====================================================================
+# WEB DEVELOPMENT ECOSYSTEM (Node.js, Vanilla JS, React, HTML, CSS)
+# ====================================================================
+
+# External Package Dependencies
+node_modules/                    # Local npm/yarn cache directories
+jspm_packages/                   # System packages for alternative module bundlers
+web_modules/                     # Transpiled frontend asset dependencies
+
+# Build, Bundler, and Distribution Outputs
+dist/                            # Standard production build target folder
+build/                           # Default build directory for Create React App
+out/                             # Next.js or generic compilation output
+.next/                           # Next.js server-side framework cache folder
+.vuepress/dist                   # VuePress framework build artifacts
+.serverless/                     # Serverless framework deployment bundles
+
+# Editor and Project State Settings
+.log                             # Standard local runtime logs
+*.log                            # Application crash dumps and tracing histories
+npm-debug.log*                   # Core Node runtime debugging errors
+yarn-debug.log*                  # Yarn package installer log history
+yarn-error.log*                  # Yarn installation exception errors
+.eslintcache                     # Execution caching buffer for ESLint checking
+.stylelintcache                  # Execution caching buffer for Stylelint styling
+.parcel-cache                    # Persistent local parsing cache for Parcel bundler
+.turbo/                          # Turborepo project configuration caching maps
+
+# ====================================================================
+# PYTHON DEVELOPMENT ECOSYSTEM
+# ====================================================================
+
+# Byte-compiled / Optimized Python Files
+__pycache__/                     # Compiled Python bytecode file directories
+*.py[cod]                        # Compiled Python script outputs
+*$py.class                       # Jython optimized execution targets
+
+# Virtual Environments and Packages
+venv/                            # Standard Python virtual environment folder
+.venv/                           # Hidden Python virtual environment variant
+env/                             # Traditional local execution dependencies
+ENV/                             # Alternate virtual environment container
+pip-log.txt                      # Detailed crash and download logging for pip
+.pytest_cache/                   # Caching directory for Python testing engines
+.coverage                        # Test suite coverage calculation summaries
+.mypy_cache/                     # Strict typing schema mapping for Mypy checking
+
+# ====================================================================
+# FORMATTING & LINTING ENGINE PERFORMANCE CACHES
+# ====================================================================
+
+# Prettier Code Formatter
+.prettiercache                   # Performance lookup tracking file for unchanged files
+
+# Ruff Python Linter and Formatter
+.ruff_cache/                     # Local parsing database mapping your Python syntax
+
+# ====================================================================
+# LOCAL ENVIRONMENT VARIABLES & SECURITY SETTINGS
+# ====================================================================
+
+# Local Deployment Secrets (Never Commit These!)
+.env                             # Base project environment secret definitions
+.env.local                       # Local system environment configurations
+.env.development.local           # Private development environment parameters
+.env.test.local                  # Local pipeline target credential systems
+.env.production.local            # Local production validation profiles
+
+# ====================================================================
+# AI DEVELOPER TOOLING
+# ====================================================================
+
+# Claude Code CLI
+.claude/settings.local.json      # Personal permission grants and machine overrides
+.claude/CLAUDE.local.md          # Personal scratchpads and individual notes
+.claude/session-env              # Tracking file for active terminal environment paths
+.claude/history.jsonl            # Continual append-only workspace execution stream
+.claude/backups/                 # Local safety file snapshots 
+.claude/cache/                   # Token usage and vector indexing buffers
+
+# ChatGPT / OpenAI Codex
+.codexignore                     # Individual machine scanning definitions
+.agentignore                     # Secondary local agent restrictions
+
+# Google Gemini (CLI & Code Assist)
+.gemini/.env                     # Local environment keys and secret overrides
+.geminiignore                    # Personal local CLI context blocks
+.aiexclude                       # Personal rules overriding default AI access paths
+
+# Google Antigravity (Agentic IDE & CLI)
+.antigravity/                    # Global app configuration mirrors
+.agent/workflows/                # Dynamically generated parallel agent tasks
+.agent/artifacts/                # Verification logs, screenshots, and task logs
+.agent/state/                    # Process trackers for active background runs
+*.antigravity.log                # Vibe-coding debugger output streams

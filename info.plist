@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.jayschwartz.sendtab</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A10</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A11</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A11</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A12</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A14</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A13</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A15</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A15</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A16</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A16</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A17</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A17</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A19</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A18</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A19</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A12</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jay Schwartz</string>
+	<key>description</key>
+	<string>Capture the current browser tab and send it to another browser, or view its page source in an editor</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Send Tab</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>subtext</key>
+				<string>Capture the current browser tab, then open it elsewhere or view its source</string>
+				<key>text</key>
+				<string>Send current tab</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A10</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>on run argv
+	set frontApp to ""
+	try
+		tell application "System Events"
+			set frontApp to name of first application process whose frontmost is true
+		end tell
+	end try
+
+	set capturedURL to ""
+
+	-- Tier 1: Safari and every Chromium-based browser (Chrome, Edge, Opera,
+	-- Brave, Vivaldi, Arc, ...) expose a scriptable "current tab"/"active tab"
+	-- URL, so asking whatever's frontmost works without naming any browser.
+	-- Safari and the Chromium family use two different terms for "the tab
+	-- that's showing," so both are tried before falling through to Tier 2.
+	try
+		using terms from application "Safari"
+			tell application frontApp
+				set capturedURL to URL of current tab of front window
+			end tell
+		end using terms from
+	end try
+
+	if capturedURL is "" then
+		try
+			using terms from application "Google Chrome"
+				tell application frontApp
+					set capturedURL to URL of active tab of front window
+				end tell
+			end using terms from
+		end try
+	end if
+
+	if capturedURL is "" then
+		-- Tier 2: universal address-bar copy, for anything without an
+		-- AppleScript dictionary (Firefox today, and future non-scriptable browsers).
+		set oldClipboard to ""
+		try
+			set oldClipboard to the clipboard as text
+		end try
+
+		try
+			tell application "System Events"
+				tell process frontApp
+					keystroke "l" using command down
+					delay 0.15
+					keystroke "c" using command down
+				end tell
+			end tell
+		end try
+		delay 0.2
+
+		try
+			set capturedURL to the clipboard as text
+		on error
+			set capturedURL to ""
+		end try
+
+		try
+			set the clipboard to oldClipboard
+		end try
+
+		if capturedURL does not start with "http" then
+			set capturedURL to ""
+		end if
+	end if
+
+	if capturedURL is "" then
+		return "NONE"
+	else
+		return capturedURL
+	end if
+end run
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A11</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>printf '%s' "$1" | tr -d '\n\r'
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>NONE</string>
+						<key>outputlabel</key>
+						<string>Nothing captured</string>
+						<key>uid</key>
+						<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A13</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Captured a URL</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A12</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Couldn't capture a URL — make sure a browser window is frontmost.</string>
+				<key>title</key>
+				<string>Send Tab</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A14</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>capturedurl</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A15</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>fixedorder</key>
+				<true/>
+				<key>items</key>
+				<string>[{"title":"Open tab in another browser","subtitle":"Choose which browser to open it in","arg":"browser"},{"title":"View page source in an editor","subtitle":"Open the page’s HTML source in your editor","arg":"source"}]</string>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.listfilter</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A16</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>browser</string>
+						<key>outputlabel</key>
+						<string>Open in browser</string>
+						<key>uid</key>
+						<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A18</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>View source</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A17</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:capturedurl}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A19</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>jumpto</key>
+				<string>alfred.action.url.openin</string>
+				<key>path</key>
+				<string>{query}</string>
+				<key>type</key>
+				<integer>2</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.actioninalfred</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:capturedurl}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>url="$1"
+tmpdir="$(mktemp -d)"
+outfile="$tmpdir/page-source.html"
+
+http_code=$(curl -sL --max-time 15 -w '%{http_code}' -o "$outfile" "$url")
+curl_exit=$?
+
+if [ $curl_exit -eq 0 ] &amp;&amp; [ -s "$outfile" ]; then
+	printf '%s' "$outfile"
+else
+	NOTIF_DETAIL="curl exit $curl_exit, HTTP $http_code, URL: $url" osascript &lt;&lt;'APPLESCRIPT'
+on run
+	display notification (system attribute "NOTIF_DETAIL") with title "Send Tab: couldn't fetch page source"
+end run
+APPLESCRIPT
+	printf '%s' "CURL_FAILED"
+fi
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>file="$1"
+
+if [ ! -f "$file" ]; then
+	osascript -e 'display notification "Could not fetch the page source." with title "Send Tab"'
+	exit 0
+fi
+
+editor="${editor_app:-Visual Studio Code}"
+
+cli=""
+case "$(printf '%s' "$editor" | tr '[:upper:]' '[:lower:]')" in
+	"visual studio code") cli="code" ;;
+	"visual studio code - insiders"|"visual studio code insiders") cli="code-insiders" ;;
+	"vscodium"|"codium") cli="codium" ;;
+	"cursor") cli="cursor" ;;
+	"windsurf") cli="windsurf" ;;
+esac
+
+if [ -n "$cli" ] &amp;&amp; command -v "$cli" &gt;/dev/null 2&gt;&amp;1; then
+	"$cli" "$file" &gt;/dev/null 2&gt;&amp;1 &amp;
+	exit 0
+fi
+
+if open -a "$editor" "$file" 2&gt;/dev/null; then
+	exit 0
+fi
+
+NOTIF_EDITOR="$editor" osascript &lt;&lt;'APPLESCRIPT'
+on run
+	display notification ("Couldn't open with \"" &amp; (system attribute "NOTIF_EDITOR") &amp; "\" — check the app name in the workflow's configuration.") with title "Send Tab"
+end run
+APPLESCRIPT
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>11</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Send Tab
+
+## Usage
+
+Capture the current browser tab via the `st` keyword.
+
+
+Choose what to do with it:
+
+* &lt;kbd&gt;↩︎&lt;/kbd&gt; Open tab in another browser — hands off to Alfred's native "Open URL in…" panel, listing every browser you have installed.
+* &lt;kbd&gt;⌘2&lt;/kbd&gt; View page source in an editor — fetches the page's HTML and opens it in your preferred editor.
+
+
+Opening in another browser shows Alfred's own panel, listing whatever's actually installed — nothing here is hardcoded, so it picks up browsers this workflow has never heard of.
+
+
+Works out of the box with Safari and any Chromium-based browser (Chrome, Edge, Opera, Brave, Vivaldi, Arc, ...). Firefox and other browsers without an AppleScript dictionary are supported too, via a Cmd+L / Cmd+C fallback.
+
+## Configuration
+
+Change the keyword (default `st`) or your preferred editor (default Visual Studio Code) from the Workflow's Configuration.
+
+## Notes
+
+Viewing page source uses `curl`, so it won't carry your browser session — a page that requires login will show its login wall rather than your logged-in content.
+</string>
+	<key>uidata</key>
+	<dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A10</key>
+		<dict>
+			<key>xpos</key>
+			<real>200.0</real>
+			<key>ypos</key>
+			<real>150.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A11</key>
+		<dict>
+			<key>xpos</key>
+			<real>420.0</real>
+			<key>ypos</key>
+			<real>280.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A12</key>
+		<dict>
+			<key>xpos</key>
+			<real>860.0</real>
+			<key>ypos</key>
+			<real>150.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A14</key>
+		<dict>
+			<key>xpos</key>
+			<real>1080.0</real>
+			<key>ypos</key>
+			<real>280.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A15</key>
+		<dict>
+			<key>xpos</key>
+			<real>1080.0</real>
+			<key>ypos</key>
+			<real>410.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A16</key>
+		<dict>
+			<key>xpos</key>
+			<real>1300.0</real>
+			<key>ypos</key>
+			<real>150.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A17</key>
+		<dict>
+			<key>xpos</key>
+			<real>1520.0</real>
+			<key>ypos</key>
+			<real>280.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A19</key>
+		<dict>
+			<key>xpos</key>
+			<real>1740.0</real>
+			<key>ypos</key>
+			<real>410.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1A</key>
+		<dict>
+			<key>xpos</key>
+			<real>1960.0</real>
+			<key>ypos</key>
+			<real>150.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1B</key>
+		<dict>
+			<key>xpos</key>
+			<real>1740.0</real>
+			<key>ypos</key>
+			<real>280.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1C</key>
+		<dict>
+			<key>xpos</key>
+			<real>1960.0</real>
+			<key>ypos</key>
+			<real>410.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2180.0</real>
+			<key>ypos</key>
+			<real>150.0</real>
+		</dict>
+		<key>3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A1E</key>
+		<dict>
+			<key>xpos</key>
+			<real>640.0</real>
+			<key>ypos</key>
+			<real>410.0</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>st</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>keyword</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Visual Studio Code</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>App to open page source in (e.g. Visual Studio Code, Sublime Text, Cursor). Must be installed.</string>
+			<key>label</key>
+			<string>Preferred editor</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>editor_app</string>
+		</dict>
+	</array>
+	<key>variables</key>
+	<dict/>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>2.1.1</string>
+	<key>webaddress</key>
+	<string>https://github.com/the-jay-schwartz/alfred-send-tab</string>
+</dict>
+</plist>

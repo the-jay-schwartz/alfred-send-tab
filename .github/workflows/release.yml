@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build workflow
+        run: python3 build.py
+
+      - name: Verify version matches tag
+        id: version
+        run: |
+          PLIST_VERSION=$(plutil -extract version raw workflow/info.plist)
+          echo "version=${PLIST_VERSION}" >> "$GITHUB_OUTPUT"
+          if [[ "${GITHUB_REF_TYPE}" == "tag" ]]; then
+            TAG_VERSION="${GITHUB_REF_NAME#v}"
+            if [[ "$TAG_VERSION" != "$PLIST_VERSION" ]]; then
+              echo "::error::Tag v${TAG_VERSION} does not match build.py's VERSION ${PLIST_VERSION}. Bump VERSION in build.py (and CHANGELOG.md) before tagging."
+              exit 1
+            fi
+            echo "Tag v${TAG_VERSION} matches build.py version ${PLIST_VERSION}."
+          fi
+
+      - name: Extract release notes
+        id: notes
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          echo "Extracting CHANGELOG section for v${VERSION}"
+          awk -v ver="$VERSION" '
+            /^## \[/ {
+              if (found) exit
+              if ($0 ~ "^## \\[" ver "\\]") { found=1; next }
+            }
+            found { print }
+          ' CHANGELOG.md > RELEASE_NOTES.md
+          sed -i '' -e '/./,$!d' RELEASE_NOTES.md 2>/dev/null || true
+          if [ -s RELEASE_NOTES.md ]; then
+            echo "has_notes=true" >> "$GITHUB_OUTPUT"
+            echo "Found notes:" && cat RELEASE_NOTES.md
+          else
+            echo "has_notes=false" >> "$GITHUB_OUTPUT"
+            echo "No CHANGELOG entry for ${VERSION}; falling back to auto-generated notes."
+          fi
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.alfredworkflow
+          body_path: ${{ steps.notes.outputs.has_notes == 'true' && 'RELEASE_NOTES.md' || '' }}
+          generate_release_notes: ${{ steps.notes.outputs.has_notes != 'true' }}

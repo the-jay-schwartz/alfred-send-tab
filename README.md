@@ -1,4 +1,6 @@
-# Send Tab
+# <img src="workflow/icon.png" width="70" align="middle" alt="Send Tab icon">&nbsp;&nbsp;Send Tab
+
+An Alfred workflow that captures the current browser tab and sends it to another browser, or opens its page source in your editor.
 
 ## Usage
 
@@ -22,6 +24,14 @@ Works out of the box with Safari and any Chromium-based browser (Chrome, Edge, O
 ## Configuration
 
 Change the keyword (default `st`) or your preferred editor (default Visual Studio Code) from the Workflow's Configuration.
+
+## Requirements
+
+- macOS with [Alfred 5](https://www.alfredapp.com/) and the Powerpack (custom workflows, List Filters, and Actions require it)
+
+## Install
+
+Download the latest `send-tab-vX.Y.Z.alfredworkflow` from the [Releases](https://github.com/the-jay-schwartz/alfred-send-tab/releases) page and double-click it to import into Alfred.
 
 ## Notes
 

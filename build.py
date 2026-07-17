@@ -1,33 +1,27 @@
 #!/usr/bin/env python3
-"""Generate info.plist from scripts/ and package SendTab.alfredworkflow.
+"""Generate workflow/info.plist and package dist/send-tab-vX.Y.Z.alfredworkflow.
 
-Run after editing scripts/capture-tab.applescript or scripts/view-source.sh.
+Run after editing anything under workflow/scripts/ or workflow/readme.md.
 Object UIDs below are fixed (not regenerated) so re-running this script
 produces a stable diff instead of churning every UID on each build.
+
+workflow/info.plist and dist/*.alfredworkflow are both build output (see
+.gitignore) — the checked-in source of truth is this file plus
+workflow/scripts/, workflow/icon.png, and workflow/readme.md.
 """
 import pathlib
 import plistlib
-import re
 import zipfile
 
 ROOT = pathlib.Path(__file__).parent
+WORKFLOW_DIR = ROOT / "workflow"
+SCRIPTS_DIR = WORKFLOW_DIR / "scripts"
 
-
-def readme_for_plist():
-    """info.plist's readme is shown as plain text (Alfred's own Get Info
-    panel), not markdown-rendered, so drop the image embeds that make
-    sense in README.md on GitHub but would just show up as raw syntax here.
-    """
-    path = ROOT / "README.md"
-    if not path.exists():
-        return ""
-    lines = path.read_text().splitlines()
-    kept = [ln for ln in lines if not re.match(r"^!\[.*\]\(.*\)\s*$", ln)]
-    return "\n".join(kept).strip() + "\n"
-CAPTURE_SCRIPT = (ROOT / "scripts" / "capture-tab.applescript").read_text()
-CURL_SCRIPT = (ROOT / "scripts" / "view-source.sh").read_text()
-OPEN_EDITOR_SCRIPT = (ROOT / "scripts" / "open-in-editor.sh").read_text()
-TRIM_SCRIPT = (ROOT / "scripts" / "trim-newline.sh").read_text()
+CAPTURE_SCRIPT = (SCRIPTS_DIR / "capture-tab.applescript").read_text()
+CURL_SCRIPT = (SCRIPTS_DIR / "view-source.sh").read_text()
+OPEN_EDITOR_SCRIPT = (SCRIPTS_DIR / "open-in-editor.sh").read_text()
+TRIM_SCRIPT = (SCRIPTS_DIR / "trim-newline.sh").read_text()
+README_TEXT = (WORKFLOW_DIR / "readme.md").read_text()
 
 # Fixed UIDs (generated once; kept stable across rebuilds for readable diffs).
 KW = "3F1E1B10-6C2E-4F1C-9C1C-1B1E7B7C1A10"
@@ -200,6 +194,8 @@ uidata = {
     for i, (u, col) in enumerate(grid)
 }
 
+VERSION = "2.1.1"
+
 root = {
     "bundleid": "com.jayschwartz.sendtab",
     "category": "Productivity",
@@ -209,7 +205,7 @@ root = {
     "disabled": False,
     "name": "Send Tab",
     "objects": objects,
-    "readme": readme_for_plist(),
+    "readme": README_TEXT,
     "uidata": uidata,
     "userconfigurationconfig": [
         {
@@ -229,17 +225,19 @@ root = {
     ],
     "variables": {},
     "variablesdontexport": [],
-    "version": "2.1.1",
+    "version": VERSION,
     "webaddress": "https://github.com/the-jay-schwartz/alfred-send-tab",
 }
 
-plist_path = ROOT / "info.plist"
+plist_path = WORKFLOW_DIR / "info.plist"
 with open(plist_path, "wb") as f:
     plistlib.dump(root, f)
 print(f"wrote {plist_path}")
 
-workflow_path = ROOT / "SendTab.alfredworkflow"
-icon_path = ROOT / "icon.png"
+dist_dir = ROOT / "dist"
+dist_dir.mkdir(exist_ok=True)
+workflow_path = dist_dir / f"send-tab-v{VERSION}.alfredworkflow"
+icon_path = WORKFLOW_DIR / "icon.png"
 with zipfile.ZipFile(workflow_path, "w", zipfile.ZIP_DEFLATED) as zf:
     zf.write(plist_path, "info.plist")
     if icon_path.exists():
